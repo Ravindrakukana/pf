@@ -1,0 +1,152 @@
+*{
+margin: 0;
+padding: 0;
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+
+/*====================
+    typography
+========================*/
+body{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+li{
+list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    
+}
+h1{
+    font-size: 3.5rem;
+}
+#welcomepara{
+    font-size: 2rem;
+}
+
+
+
+/*====================
+        layout
+========================*/
+header{
+    background-color: #be3144;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    
+}
+.navbar{
+padding: 1em;
+text-align: center;
+
+}
+.navbar >li{
+    padding: .35em;
+}
+.nav-link{
+    color: white;
+    padding: .5em;
+}
+.nav-link:hover, .nav-link:focus{
+    color: #3f6212;
+    background-color: #ef4444;
+    border-radius: 5px;
+}
+.about{
+    text-align: center;
+    background-color: rgb(27, 17, 17);
+    color: white;
+    height: 100vh;
+    margin-top: 0em;
+}
+#welcomeheading{
+padding-top: 4em;
+}
+#welcomepara{
+padding-top: .6em;
+color:#ef4444;
+}
+.projects{
+    background-color: #164e63;
+    padding: 2em;
+}
+.project-tile{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+
+
+}
+.projects-grid{
+    margin: 2em;
+}
+.project{
+    margin: 0;
+    padding: 0;
+}
+.linkpic{
+    display: flex;
+    margin-bottom: 6em;
+    width: 400px;
+    height: 250px; 
+    margin-left: 4em;
+}
+.projects-section-header{
+padding: 1em;
+font-size: 2rem;
+}
+.linkpic-para{
+    padding: 1em;
+    font-size: 1rem;
+    background-color: gray;
+}
+.contact{
+    text-align: center;
+    padding: 2em;
+    background-color: #303841;
+    height: 70vh;
+
+}
+.contact a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.contact a:hover{
+    color: tomato;
+}
+#contact_heading{
+    color: white;
+}
+#contact-para{
+    padding: 1em;
+    color: whitesmoke;
+
+}
+
+.footer{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width:500px){
+   .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    .projects-grid{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;    
+    }
+}
